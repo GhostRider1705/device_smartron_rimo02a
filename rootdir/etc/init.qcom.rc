@@ -355,7 +355,7 @@ on post-fs-data
     mkdir /data/data/media 0770 media media
 
     #Create folder for mm-qcamera-daemon
-    mkdir /data/camera 0770 media camera
+    mkdir /data/misc/camera 0770 camera camera
 
     #Create PERFD deamon related dirs
     mkdir /data/vendor/perfd 0770 root system
@@ -435,7 +435,11 @@ service cnd /vendor/bin/cnd
     user system
     group system wifi inet radio wakelock net_admin
 
+<<<<<<< HEAD
 service dpmQmiMgr /system/vendor/bin/dpmQmiMgr
+=======
+service vendor.dpmQmiMgr /vendor/bin/dpmQmiMgr
+>>>>>>> ed5eacf... s2: kanged some from c106 and fixed sepolicy
     class main
     user system
     group radio system
@@ -572,13 +576,13 @@ service charger /charger
     group system graphics
     seclabel u:r:healthd:s0
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
     user root
     group root
     disabled
 
-service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_little_big.conf
+service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance_little_big.conf
     class core
     user root
     group root
@@ -595,10 +599,14 @@ on property:init.svc.surfaceflinger=restarting
 on property:init.svc.recovery=running
     trigger enable-low-power
 
+<<<<<<< HEAD
 on property:dev.bootcomplete=1
     trigger enable-low-power
 
 service time_daemon /system/vendor/bin/time_daemon
+=======
+service vendor.time_daemon /vendor/bin/time_daemon
+>>>>>>> ed5eacf... s2: kanged some from c106 and fixed sepolicy
     class main
     user root
     group root

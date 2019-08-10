@@ -95,8 +95,8 @@ on post-fs-data
     chown system system /sys/class/type-c/info/vbus_status
 
     # audio
-    chown system system /vendor/bin/ext_spk_loopback
-    chmod 0755 /vendor/bin/ext_spk_loopback
+    chown system system /system/bin/ext_spk_loopback
+    chmod 0755 /system/bin/ext_spk_loopback
     chmod 0644 /sys/devices/soc.0/c051000.sound/usb_audio
     chmod 0644 /sys/devices/soc.0/c051000.sound/usb_audio_pid
     chmod 0644 /sys/module/snd_soc_msm8x16/parameters/headset_swap
@@ -187,11 +187,16 @@ service vendor.qseecomd /vendor/bin/qseecomd
    class core
    user root
    group root
+<<<<<<< HEAD
 
 service vendor.perfd /vendor/bin/perfd
    class main
    user root
    disabled
+=======
+   writepid /dev/cpuset/foreground/tasks
+   writepid /dev/cpuset/camera-daemon/tasks
+>>>>>>> ed5eacf... s2: kanged some from c106 and fixed sepolicy
 
 service vendor.thermal-engine /vendor/bin/thermal-engine
    class main
@@ -200,7 +205,13 @@ service vendor.thermal-engine /vendor/bin/thermal-engine
    socket thermal-recv-client stream 0660 system system
    socket thermal-recv-passive-client stream 0666 system system
    socket thermal-send-rule stream 0660 system system
+<<<<<<< HEAD
    group root
+=======
+   group system root diag
+   writepid /dev/cpuset/system-background/tasks
+   writepid /dev/cpuset/camera-daemon/tasks
+>>>>>>> ed5eacf... s2: kanged some from c106 and fixed sepolicy
 
 on boot
     start rmt_storage
