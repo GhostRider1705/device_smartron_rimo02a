@@ -21,7 +21,7 @@ $(call inherit-product, device/smartron/rimo02a/full_rimo02a.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BOOT_ANIMATION_RES_EVO := true
 TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rimo02a
