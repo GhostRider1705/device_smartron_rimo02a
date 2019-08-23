@@ -39,4 +39,3 @@ BUILD_FINGERPRINT= Smartron/srtphone/rimo02a:8.0.0/T5524INDURC-475/475:user/rele
 
 # Release name
 PRODUCT_RELEASE_NAME := rimo02a
-custom_BUILD_TYPE := RELEASE
