@@ -25,6 +25,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rimo02a
+PRODUCT_MODEL := rimo02a
 PRODUCT_NAME := aosp_rimo02a
 PRODUCT_BRAND := Smartron
 TARGET DEVICE := rimo02a
@@ -39,3 +40,4 @@ BUILD_FINGERPRINT= Smartron/srtphone/rimo02a:8.0.0/T5524INDURC-475/475:user/rele
 
 # Release name
 PRODUCT_RELEASE_NAME := rimo02a
+CUSTOM_BUILD_TYPE := OFFICIAL
