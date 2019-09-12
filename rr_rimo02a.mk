@@ -17,19 +17,21 @@
 # Inherit device configuration
 $(call inherit-product, device/smartron/rimo02a/full_rimo02a.mk)
 
-# Inherit some common EvoX-ify stuff.
+# Inherit some common RR stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+
+#Boot animation
+TARGET_SCREE_WIDTH := 1080
+tARGET_SCREEN_HEIGHT := 1920
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BOOT_ANIMATION_RES_EVO := true
-TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rimo02a
-PRODUCT_MODEL := rimo02a
-PRODUCT_NAME := aosp_rimo02a
+PRODUCT_NAME := rr_rimo02a
 PRODUCT_BRAND := Smartron
-TARGET DEVICE := rimo02a
 PRODUCT_MANUFACTURER := Smartron
+
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_GMS_CLIENTID_BASE := android-smartron
 
@@ -38,6 +40,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT= Smartron/srtphone/rimo02a:8.0.0/T5524INDURC-475/475:user/release-keys
 
-# Release name
-PRODUCT_RELEASE_NAME := rimo02a
-CUSTOM_BUILD_TYPE := OFFICIAL
