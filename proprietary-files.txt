@@ -1,19 +1,52 @@
-# Audio ACBD
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Bluetooth_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_General_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Global_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Handset_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Hdmi_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Headset_cal.acdb
-etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Speaker_cal.acdb
+#ACDB Data
+vendor/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_General_cal.acdb
+vendor/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Global_cal.acdb
+vendor/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_General_cal.acdb
+vendor/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Global_cal.acdb
+vendor/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/msm8976-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Bluetooth_cal.acdb
+vendor/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_General_cal.acdb
+vendor/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Global_cal.acdb
+vendor/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Handset_cal.acdb
+vendor/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Hdmi_cal.acdb
+vendor/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Headset_cal.acdb
+vendor/etc/acdbdata/QRD/msm8976-skun-snd-card/QRD_SKUN_Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
+
+# Audio libraries
+vendor/etc/settings/mono_qcom.cnt
+-vendor/lib/libtfa9890.so
+-vendor/lib64/libtfa9890.so
 
 # Camera
-lib/hw/camera.msm8952.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libmm-qcamera.so
-lib/libmmosal.so
-lib/libqomx_core.so
+vendor/lib/hw/camera.msm8952.so
+vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmjpeg_interface.so
+vendor/lib/libmm-qcamera.so
+vendor/lib/libmmosal.so
+vendor/lib/libqomx_core.so
 vendor/bin/mm-qcamera-daemon
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
@@ -125,8 +158,8 @@ vendor/lib/libactuator_dw9714_yuanda.so
 vendor/lib/libactuator_pseudo.so
 
 # Camera Configs
-etc/camera/s5k3l8_yuanda_chromatix.xml
-etc/camera/s5k5e8_chromatix.xml
+vendor/etc/camera/s5k3l8_yuanda_chromatix.xml
+vendor/etc/camera/s5k5e8_chromatix.xml
 
 # Camera Chromatix
 vendor/lib/libchromatix_s5k5e8_a3_hfr_120.so
@@ -186,15 +219,15 @@ vendor/lib/libchromatix_s5k5e8_snapshot.so
 vendor/lib/libchromatix_s5k3l8_yuanda_cpp_preview.so
 
 # Camera Firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
-etc/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_12_0.fw
+vendor/etc/firmware/cpp_firmware_v1_1_1.fw
+vendor/etc/firmware/cpp_firmware_v1_1_6.fw
+vendor/etc/firmware/cpp_firmware_v1_2_0.fw
+vendor/etc/firmware/cpp_firmware_v1_4_0.fw
+vendor/etc/firmware/cpp_firmware_v1_5_0.fw
+vendor/etc/firmware/cpp_firmware_v1_6_0.fw
+vendor/etc/firmware/cpp_firmware_v1_8_0.fw
+vendor/etc/firmware/cpp_firmware_v1_10_0.fw
+vendor/etc/firmware/cpp_firmware_v1_12_0.fw
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -207,29 +240,29 @@ vendor/lib64/libgoodixfingerprintd_binder.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgf_ca.so
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
-lib/android.hardware.biometrics.fingerprint@2.1.so
-lib64/android.hardware.biometrics.fingerprint@2.1.so
+vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+vendor/lib/android.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so
 
 # Media firmware
-etc/firmware/venus.b00
-etc/firmware/venus.b01
-etc/firmware/venus.b02
-etc/firmware/venus.b03
-etc/firmware/venus.b04
-etc/firmware/venus.mbn
-etc/firmware/venus.mdt
-etc/firmware/venus-v1.b00
-etc/firmware/venus-v1.b01
-etc/firmware/venus-v1.b02
-etc/firmware/venus-v1.b03
-etc/firmware/venus-v1.b04
-etc/firmware/venus-v1.mbn
-etc/firmware/venus-v1.mdt
+vendor/etc/firmware/venus.b00
+vendor/etc/firmware/venus.b01
+vendor/etc/firmware/venus.b02
+vendor/etc/firmware/venus.b03
+vendor/etc/firmware/venus.b04
+vendor/etc/firmware/venus.mbn
+vendor/etc/firmware/venus.mdt
+vendor/etc/firmware/venus-v1.b00
+vendor/etc/firmware/venus-v1.b01
+vendor/etc/firmware/venus-v1.b02
+vendor/etc/firmware/venus-v1.b03
+vendor/etc/firmware/venus-v1.b04
+vendor/etc/firmware/venus-v1.mbn
+vendor/etc/firmware/venus-v1.mdt
 
 # NFC
-etc/nqnfcee_access.xml
-etc/nqnfcse_access.xml
+vendor/etc/nqnfcee_access.xml
+vendor/etc/nqnfcse_access.xml
 vendor/etc/libnfc-brcm.conf
 vendor/etc/libnfc-nxp.conf
 vendor/firmware/libpn548ad_fw.so

@@ -11,4 +11,5 @@ LOCAL_C_INCLUDES := \
 LOCAL_SRC_FILES := init_rimo02a.cpp
 
 LOCAL_MODULE := libinit_rimo02a
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_STATIC_LIBRARY)

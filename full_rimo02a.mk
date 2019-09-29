@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from rimo02a device
 $(call inherit-product, device/smartron/rimo02a/device.mk)
 
+# Inherit common treble configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/treble_common.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rimo02a
 PRODUCT_NAME := full_rimo02a

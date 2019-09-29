@@ -103,6 +103,7 @@ LOCAL_STATIC_LIBRARIES := android.hardware.camera.common@1.0-helper
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_TAGS := optional
+LOCAL_VENDOR_MODULE := true
 ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 26 ))" )))
 LOCAL_MODULE_OWNER := qcom
 LOCAL_VENDOR_MODULE  := true

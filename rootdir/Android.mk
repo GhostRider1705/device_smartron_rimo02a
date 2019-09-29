@@ -8,6 +8,7 @@ LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/fstab.qcom
 LOCAL_MODULE_PATH	:= $(TARGET_OUT_VENDOR_ETC)
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -16,6 +17,7 @@ LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/init.qcom.rc
 LOCAL_MODULE_PATH	:= $(TARGET_OUT_VENDOR_ETC)/init/hw
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -24,6 +26,7 @@ LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/init.target.rc
 LOCAL_MODULE_PATH	:= $(TARGET_OUT_VENDOR_ETC)/init/hw
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -32,6 +35,7 @@ LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/init.qcom.sh
 LOCAL_MODULE_PATH	:= $(TARGET_OUT_VENDOR_EXECUTABLES)
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -40,6 +44,7 @@ LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/init.qcom.usb.rc
 LOCAL_MODULE_PATH	:= $(TARGET_OUT_VENDOR_ETC)/init/hw
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -49,6 +54,7 @@ LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/ueventd.qcom.rc
 LOCAL_MODULE_PATH	:=  $(TARGET_OUT_VENDOR)
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -57,6 +63,7 @@ LOCAL_MODULE_TAGS	 := optional eng
 LOCAL_MODULE_CLASS	 := ETC
 LOCAL_SRC_FILES		 := etc/loggy.sh
 LOCAL_MODULE_PATH  	 := $(TARGET_ROOT_OUT)
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 # Configuration scripts
@@ -67,6 +74,7 @@ LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/init.qcom.power.rc
 LOCAL_MODULE_PATH	:= $(TARGET_OUT_VENDOR_ETC)/init/hw
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -81,6 +89,7 @@ LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/init.safailnet.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init/hw
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 # Offmode charging
@@ -93,4 +102,5 @@ LOCAL_UNSTRIPPED_PATH := $(TARGET_ROOT_OUT_SBIN_UNSTRIPPED)
 LOCAL_SRC_FILES       := sbin/chargeonlymode
 LOCAL_MODULE_TAGS     := optional
 LOCAL_MODULE_CLASS    := EXECUTABLES
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
